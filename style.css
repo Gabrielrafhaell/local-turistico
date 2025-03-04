@@ -1,0 +1,140 @@
+/* style.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #f0f4f8, #d9e4f5);
+  color: #333;
+  line-height: 1.6;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilo do cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  animation: fadeIn 1s ease-in-out;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #34495e;
+}
+
+/* Estilo da seção de introdução */
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: zoomIn 1s ease-in-out;
+}
+
+.intro p {
+  margin-top: 20px;
+  font-size: 1.1em;
+  padding: 0 20px;
+}
+
+/* Estilo da seção de destinos */
+.destinos {
+  margin-bottom: 40px;
+}
+
+.destinos h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #2980b9;
+  margin-bottom: 20px;
+}
+
+.destinos p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo dos artigos de destino */
+.destino {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destino:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.destino img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.destino h3 {
+  margin-top: 15px;
+  color: #2980b9;
+}
+
+.destino p {
+  margin-top: 10px;
+}
+
+/* Estilo da seção de conclusão */
+.conclusao {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 1.1em;
+}
+
+/* Estilo do rodapé */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #7f8c8d;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
