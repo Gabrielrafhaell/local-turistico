@@ -1,140 +1,169 @@
-/* style.css */
-
-/* Reset básico */
+/* Resetando margens e padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Corpo da página */
 body {
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(to right, #f0f4f8, #d9e4f5);
+  font-family: 'Playfair Display', serif; /* Fonte luxuosa e elegante */
+  background-color: #f8f8f8;
   color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   line-height: 1.6;
 }
 
+/* Contêiner principal */
 .page {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  width: 100%;
+  margin: 20px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo do cabeçalho */
+/* Cabeçalho */
 header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 header h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   color: #2c3e50;
-  animation: fadeIn 1s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 header p {
-  font-size: 1.2em;
-  color: #34495e;
+  font-size: 1.5em;
+  color: #7f8c8d;
+  margin-top: 10px;
 }
 
-/* Estilo da seção de introdução */
+/* Imagem introdutória */
 .intro {
-  text-align: center;
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
-.intro img {
-  max-width: 100%;
+.intro-image {
+  width: 100%;
+  max-width: 1200px;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  animation: zoomIn 1s ease-in-out;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.intro-image:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
 }
 
 .intro p {
   margin-top: 20px;
-  font-size: 1.1em;
-  padding: 0 20px;
+  font-size: 1.2em;
+  color: #34495e;
+  max-width: 800px;
+  text-align: center;
 }
 
-/* Estilo da seção de destinos */
+/* Estilo dos Destinos */
 .destinos {
-  margin-bottom: 40px;
+  margin-top: 60px;
+  text-align: center;
 }
 
 .destinos h2 {
-  text-align: center;
-  font-size: 2em;
-  color: #2980b9;
-  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.destinos p {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Estilo dos artigos de destino */
 .destino {
-  background: #fff;
-  border-radius: 10px;
+  display: inline-block;
+  width: 30%;
+  margin: 15px;
+  background-color: #ecf0f1;
   padding: 20px;
-  margin: 20px 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .destino:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 .destino img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
 .destino h3 {
+  font-size: 1.8em;
+  color: #2c3e50;
   margin-top: 15px;
-  color: #2980b9;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .destino p {
+  font-size: 1em;
+  color: #7f8c8d;
   margin-top: 10px;
 }
 
-/* Estilo da seção de conclusão */
-.conclusao {
-  text-align: center;
-  margin: 40px 0;
-  font-size: 1.1em;
-}
-
-/* Estilo do rodapé */
+/* Estilo para o rodapé */
 footer {
   text-align: center;
-  margin-top: 40px;
-  font-size: 0.9em;
+  margin-top: 50px;
+  font-size: 1.2em;
   color: #7f8c8d;
+  border-top: 1px solid #ecf0f1;
+  padding-top: 20px;
 }
 
-/* Animações */
+footer img {
+  width: 20px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+/* Animação de transição de texto */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
-@keyframes zoomIn {
-  from {
-    transform: scale(0.9);
-    opacity: 0;
+/* Aplicando animação de fadeIn */
+header, .destinos, footer {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .destino {
+      width: 100%;
+      margin-bottom: 20px;
   }
-  to {
-    transform: scale(1);
-    opacity: 1;
+
+  .intro p {
+      font-size: 1.1em;
   }
 }
